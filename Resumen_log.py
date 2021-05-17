@@ -16,4 +16,4 @@ with open(ruta_full) as full_log, open(ruta_farm, 'w') as farm_log:
         if 'harvester' in linea or 'farmer' in linea:
             farm_log.write(linea)
 
-subprocess.run(["notepad","C:/Users/'+ usuario +'/.chia/mainnet/log/farm_debug.log"])
+subprocess.run(["notepad",ruta_farm])
